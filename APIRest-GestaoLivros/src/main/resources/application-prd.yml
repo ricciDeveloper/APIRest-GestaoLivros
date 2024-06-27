@@ -8,7 +8,14 @@ spring:
     password: xvkpsgZgDAeUSrjdlQsLKanFEUUnZCKW
 
   jpa:
+    open-in-view: false
     hibernate:
       ddl-auto: create
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
 
-    database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+
+  server:
+    port: 37462
