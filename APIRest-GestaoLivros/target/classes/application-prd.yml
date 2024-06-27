@@ -1,0 +1,13 @@
+spring:
+  profiles: prod
+
+  datasource:
+    url: jdbc:postgresql://postgresql://postgres:MKnwsqOLiXRJjYwbtGcytPIhJEQBdQsY@roundhouse.proxy.rlwy.net:20985/railway:20985/railway
+    driverClassName: org.postgresql.Driver
+    username: postgres
+    password: MKnwsqOLiXRJjYwbtGcytPIhJEQBdQsY
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.PostgreSQLDialect

@@ -1,0 +1,8 @@
+API\Domain\Controller\LivrosController.class
+API\Domain\Repository\LivrosRepository.class
+API\Domain\Config\OpenApiConfig.class
+API\Domain\Service\Impl\LivrosServiceImpl.class
+API\Application.class
+API\Domain\Controller\Exception\GlobalHandlerException.class
+API\Domain\Model\Livros.class
+API\Domain\Service\LivrosService.class

@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: API.ApiRestGestaoLivrosApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.286 s -- in API.ApiRestGestaoLivrosApplicationTests
