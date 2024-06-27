@@ -1,0 +1,13 @@
+spring:
+  profiles: prod
+
+  datasource:
+    url: jdbc:postgresql://${RAILWAY_DATABASE_URL}:${RAILWAY_DATABASE_PORT}/${DATABASE_NAME}
+    driverClassName: org.postgresql.Driver
+    username: ${DATABASE_USERNAME}
+    password: ${DATABASE_PASSWORD}
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
