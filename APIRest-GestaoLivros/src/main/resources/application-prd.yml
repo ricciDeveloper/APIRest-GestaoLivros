@@ -2,10 +2,10 @@ spring:
   profiles: prod
 
   datasource:
-    url: jdbc:postgresql://${RAILWAY_DATABASE_URL}:${RAILWAY_DATABASE_PORT}/${DATABASE_NAME}
+    url: jdbc:postgresql://postgresql://postgres:MKnwsqOLiXRJjYwbtGcytPIhJEQBdQsY@roundhouse.proxy.rlwy.net:20985/railway:20985/railway
     driverClassName: org.postgresql.Driver
-    username: ${DATABASE_USERNAME}
-    password: ${DATABASE_PASSWORD}
+    username: postgres
+    password: MKnwsqOLiXRJjYwbtGcytPIhJEQBdQsY
 
   jpa:
     hibernate:
