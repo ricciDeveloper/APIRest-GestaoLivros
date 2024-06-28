@@ -12,8 +12,7 @@ spring:
     hibernate:
       ddl-auto: create
     properties:
-      hibernate:
-        dialect: org.hibernate.dialect.PostgreSQLDialect
+
 
 server:
   port: 44090
