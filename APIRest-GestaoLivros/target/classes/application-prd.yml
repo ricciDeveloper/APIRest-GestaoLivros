@@ -2,10 +2,10 @@ spring:
   profiles: prod
 
   datasource:
-    url: jdbc:postgresql://viaduct.proxy.rlwy.net:37462/railway
+    url: jdbc:postgresql://viaduct.proxy.rlwy.net:44090/railway
     driverClassName: org.postgresql.Driver
     username: postgres
-    password: xvkpsgZgDAeUSrjdlQsLKanFEUUnZCKW
+    password: kBhDlKRqmfgBlSVYyAzoiWJnwcXCrivz
 
   jpa:
     open-in-view: false
@@ -15,7 +15,5 @@ spring:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
 
-
-
-  server:
-    port: 37462
+server:
+  port: 44090
