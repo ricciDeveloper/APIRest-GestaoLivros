@@ -2,10 +2,10 @@ spring:
   profiles: prod
 
   datasource:
-    url: jdbc:postgresql://viaduct.proxy.rlwy.net:37462/railway
+    url: jdbc:postgresql://postgres:kBhDlKRqmfgBlSVYyAzoiWJnwcXCrivz@viaduct.proxy.rlwy.net:44090/railway
     driverClassName: org.postgresql.Driver
     username: postgres
-    password: xvkpsgZgDAeUSrjdlQsLKanFEUUnZCKW
+    password: kBhDlKRqmfgBlSVYyAzoiWJnwcXCrivz
 
   jpa:
     open-in-view: false
