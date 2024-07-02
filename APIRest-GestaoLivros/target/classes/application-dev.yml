@@ -2,7 +2,7 @@ spring:
   datasource:
     url: jdbc:h2:mem:bookjv
     username: jvdev
-    password:
+    password: kBhDlKRqmfgBlSVYyAzoiWJnwcXCrivz
   jpa:
     show-sql: true
     open-in-view: false

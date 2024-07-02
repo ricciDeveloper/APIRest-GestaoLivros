@@ -2,6 +2,7 @@ package API.Domain.Controller;
 
 import API.Domain.Model.Livros;
 import API.Domain.Service.LivrosService;
+import org.apache.coyote.Response;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
@@ -16,6 +17,8 @@ public class LivrosController {
     public LivrosController(LivrosService livrosService) {
         this.livrosService = livrosService;
     }
+
+
     @GetMapping("/{id}")
     public ResponseEntity<Livros> buscarPorId(@PathVariable Long id){
         var livros = livrosService.buscarPorId(id);
@@ -30,4 +33,20 @@ public class LivrosController {
                 .toUri();
         return ResponseEntity.created(location).body(livrosRegistrados);
     }
+    @GetMapping
+    public ResponseEntity<Iterable<Livros>> buscarTodos(){
+        return ResponseEntity.ok(livrosService.buscarTodos());
+    }
+    @PutMapping("/{id}")
+    public ResponseEntity<Livros> atualizar(@PathVariable Long id, @RequestBody Livros livros){
+        livrosService.atualizar(id, livros);
+        return ResponseEntity.ok(livros);
+    }
+
+    @DeleteMapping("/{id}")
+    public ResponseEntity<Void> deletar(@PathVariable Long id){
+        livrosService.deletar(id);
+        return ResponseEntity.ok().build();
+    }
+
 }
